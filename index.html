@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Manzi | Portfolio Développeur</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <!-- Cursor effect -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Particles background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <span class="logo-text">EM</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Accueil</a></li>
+            <li><a href="#about" class="nav-link">À propos</a></li>
+            <li><a href="#projects" class="nav-link">Projets</a></li>
+            <li><a href="#skills" class="nav-link">Compétences</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="greeting">Bonjour, je suis</span>
+                <h1 class="hero-title">
+                    <span class="name-first">Ethan</span>
+                    <span class="name-last">Manzi</span>
+                </h1>
+                <div class="typing-container">
+                    <span class="static-text">Je suis </span>
+                    <span class="typed-text"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+                <p class="hero-description">
+                    Développeur passionné par l'innovation technologique, 
+                    créant des solutions créatives avec Python, PHP, Go et plus encore.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Voir mes projets</span>
+                        <i class="fas fa-code"></i>
+                    </a>
+                    <a href="https://github.com/Ethanmzi" target="_blank" class="btn btn-secondary">
+                        <span>GitHub</span>
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:ethanmzi@outlook.fr" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:0624247996" class="social-link" title="Téléphone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="https://github.com/Ethanmzi" target="_blank" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="avatar-container">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-ring ring-2"></div>
+                    <div class="avatar-ring ring-3"></div>
+                    <div class="avatar-placeholder">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+                <div class="floating-elements">
+                    <div class="floating-element el-1"><i class="fab fa-python"></i></div>
+                    <div class="floating-element el-2"><i class="fab fa-php"></i></div>
+                    <div class="floating-element el-3"><i class="fab fa-js"></i></div>
+                    <div class="floating-element el-4"><i class="fab fa-java"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">À propos</span>
+                <h2 class="section-title">Qui suis-je ?</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-card glass-card">
+                    <div class="about-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Développeur</h3>
+                    <p>
+                        Passionné par le développement, je crée des applications web, des bots Discord,
+                        des jeux et des projets d'intelligence artificielle.
+                    </p>
+                </div>
+                <div class="about-card glass-card">
+                    <div class="about-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Innovateur</h3>
+                    <p>
+                        Toujours à la recherche de nouvelles technologies et défis,
+                        j'explore constamment de nouvelles façons de résoudre des problèmes.
+                    </p>
+                </div>
+                <div class="about-card glass-card">
+                    <div class="about-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Apprenant</h3>
+                    <p>
+                        En formation continue, je développe mes compétences en Data Science,
+                        Intelligence Artificielle et développement Full-Stack.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Mes Projets</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- DATA-IA-Projet -->
+                <a href="https://github.com/Ethanmzi/DATA-IA-Projet" target="_blank" class="project-card glass-card">
+                    <div class="project-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">DATA-IA-Projet</h3>
+                        <p class="project-description">
+                            Projet de Data Science et Intelligence Artificielle utilisant Jupyter Notebook
+                            pour l'analyse de données et le machine learning.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-python"></i> Jupyter</span>
+                            <span class="tech-tag"><i class="fas fa-database"></i> Data</span>
+                            <span class="tech-tag"><i class="fas fa-robot"></i> IA</span>
+                        </div>
+                    </div>
+                    <div class="project-link">
+                        <i class="fab fa-github"></i>
+                        <span>Voir sur GitHub</span>
+                    </div>
+                </a>
+
+                <!-- E-Commerce-PHP -->
+                <a href="https://github.com/Ethanmzi/E-Commerce-PHP" target="_blank" class="project-card glass-card">
+                    <div class="project-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce-PHP</h3>
+                        <p class="project-description">
+                            Site e-commerce complet développé en PHP avec gestion des produits,
+                            panier d'achat et système de paiement.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-php"></i> PHP</span>
+                            <span class="tech-tag"><i class="fas fa-database"></i> MySQL</span>
+                            <span class="tech-tag"><i class="fab fa-html5"></i> HTML/CSS</span>
+                        </div>
+                    </div>
+                    <div class="project-link">
+                        <i class="fab fa-github"></i>
+                        <span>Voir sur GitHub</span>
+                    </div>
+                </a>
+
+                <!-- Guess-The-Rank -->
+                <a href="https://github.com/Ethanmzi/Guess-The-Rank" target="_blank" class="project-card glass-card">
+                    <div class="project-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Guess-The-Rank</h3>
+                        <p class="project-description">
+                            Jeu web interactif où les joueurs doivent deviner le rang
+                            d'un joueur à partir de clips de gameplay.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS</span>
+                            <span class="tech-tag"><i class="fab fa-html5"></i> HTML</span>
+                            <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-link">
+                        <i class="fab fa-github"></i>
+                        <span>Voir sur GitHub</span>
+                    </div>
+                </a>
+
+                <!-- Bot-DiscordB2 -->
+                <a href="https://github.com/Ethanmzi/Bot-DiscordB2" target="_blank" class="project-card glass-card">
+                    <div class="project-icon">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Bot-DiscordB2</h3>
+                            <span class="project-stars"><i class="fas fa-star"></i> 1</span>
+                        </div>
+                        <p class="project-description">
+                            Bot Discord développé en Python avec des fonctionnalités
+                            avancées pour la modération et l'automatisation.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-tag"><i class="fab fa-discord"></i> Discord.py</span>
+                        </div>
+                    </div>
+                    <div class="project-link">
+                        <i class="fab fa-github"></i>
+                        <span>Voir sur GitHub</span>
+                    </div>
+                </a>
+
+                <!-- Groupie-Tracker -->
+                <a href="https://github.com/Ethanmzi/Groupie-Tracker" target="_blank" class="project-card glass-card">
+                    <div class="project-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Groupie-Tracker</h3>
+                            <span class="project-stars"><i class="fas fa-star"></i> 1</span>
+                        </div>
+                        <p class="project-description">
+                            Application web en Go permettant de suivre et visualiser
+                            les informations sur des groupes et artistes musicaux.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-golang"></i> Go</span>
+                            <span class="tech-tag"><i class="fas fa-server"></i> API</span>
+                            <span class="tech-tag"><i class="fab fa-html5"></i> HTML</span>
+                        </div>
+                    </div>
+                    <div class="project-link">
+                        <i class="fab fa-github"></i>
+                        <span>Voir sur GitHub</span>
+                    </div>
+                </a>
+
+                <!-- Projet-labyrinthe -->
+                <a href="https://github.com/Ethanmzi/Projet-labyrinthe" target="_blank" class="project-card glass-card">
+                    <div class="project-icon">
+                        <i class="fas fa-maze"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Projet-labyrinthe</h3>
+                            <span class="project-stars"><i class="fas fa-star"></i> 1</span>
+                        </div>
+                        <p class="project-description">
+                            Jeu de labyrinthe interactif développé en JavaScript
+                            avec génération procédurale et résolution algorithmique.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                            <span class="tech-tag"><i class="fas fa-project-diagram"></i> Algorithmes</span>
+                        </div>
+                    </div>
+                    <div class="project-link">
+                        <i class="fab fa-github"></i>
+                        <span>Voir sur GitHub</span>
+                    </div>
+                </a>
+
+                <!-- Jeu-Dames -->
+                <a href="https://github.com/Ethanmzi/Jeu-Dames" target="_blank" class="project-card glass-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chess-board"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Jeu-Dames</h3>
+                            <span class="project-stars"><i class="fas fa-star"></i> 1</span>
+                        </div>
+                        <p class="project-description">
+                            Jeu de Dames développé en Java avec interface graphique,
+                            règles complètes et mode deux joueurs.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-java"></i> Java</span>
+                            <span class="tech-tag"><i class="fas fa-window-maximize"></i> GUI</span>
+                        </div>
+                    </div>
+                    <div class="project-link">
+                        <i class="fab fa-github"></i>
+                        <span>Voir sur GitHub</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="github-cta">
+                <a href="https://github.com/Ethanmzi?tab=repositories" target="_blank" class="btn btn-primary">
+                    <span>Voir tous mes projets sur GitHub</span>
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Mes Compétences</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Langages
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PHP</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-percent">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Go</span>
+                                <span class="skill-percent">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Technologies
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL / Bases de données</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git / GitHub</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML / CSS</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Data Science / IA</span>
+                                <span class="skill-percent">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-icons">
+                <div class="tech-icon glass-card" title="Python">
+                    <i class="fab fa-python"></i>
+                </div>
+                <div class="tech-icon glass-card" title="PHP">
+                    <i class="fab fa-php"></i>
+                </div>
+                <div class="tech-icon glass-card" title="JavaScript">
+                    <i class="fab fa-js"></i>
+                </div>
+                <div class="tech-icon glass-card" title="Java">
+                    <i class="fab fa-java"></i>
+                </div>
+                <div class="tech-icon glass-card" title="Go">
+                    <i class="fab fa-golang"></i>
+                </div>
+                <div class="tech-icon glass-card" title="HTML5">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="tech-icon glass-card" title="CSS3">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="tech-icon glass-card" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </div>
+                <div class="tech-icon glass-card" title="Discord">
+                    <i class="fab fa-discord"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Travaillons Ensemble</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-intro">
+                        Vous avez un projet ou une opportunité ? Envoyez-moi un message directement !
+                    </p>
+                    <div class="contact-cards">
+                        <a href="mailto:ethanmzi@outlook.fr" class="contact-card glass-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">ethanmzi@outlook.fr</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Ethanmzi" target="_blank" class="contact-card glass-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">GitHub</span>
+                                <span class="contact-value">github.com/Ethanmzi</span>
+                            </div>
+                        </a>
+                        <a href="tel:0624247996" class="contact-card glass-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Téléphone</span>
+                                <span class="contact-value">06 24 24 79 96</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <form id="contact-form" class="contact-form glass-card">
+                    <h3 class="form-title">
+                        <i class="fab fa-discord"></i>
+                        Envoyez-moi un message
+                    </h3>
+                    <!-- Honeypot anti-bot -->
+                    <input type="text" name="website" id="website" style="display: none;" tabindex="-1" autocomplete="off">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="firstname" name="firstname" placeholder=" " required>
+                            <label for="firstname">Prénom</label>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="lastname" name="lastname" placeholder=" " required>
+                            <label for="lastname">Nom</label>
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">Email</label>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                        <label for="message">Votre message</label>
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span class="btn-text">Envoyer sur Discord</span>
+                        <span class="btn-loading" style="display: none;">Envoi en cours...</span>
+                        <i class="fab fa-discord"></i>
+                    </button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">EM</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Accueil</a>
+                    <a href="#about">À propos</a>
+                    <a href="#projects">Projets</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:ethanmzi@outlook.fr"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/Ethanmzi" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ethan Manzi. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
