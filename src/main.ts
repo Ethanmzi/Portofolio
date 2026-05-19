@@ -275,18 +275,27 @@ function initScrollAnimations() {
 
 // Skill Bars Animation
 function initSkillBars() {
-    const skillBars = document.querySelectorAll('.skill-progress');
-    
+    const skillBars = document.querySelectorAll<HTMLElement>('.skill-progress');
+
+    const setBarWidth = (bar: HTMLElement) => {
+        const progress = bar.dataset.progress;
+        if (progress) {
+            bar.style.width = `${progress}%`;
+            bar.classList.add('filled');
+        }
+    };
+
+    // Apply widths immediately to support users who don't scroll or if intersection observer misses.
+    skillBars.forEach(setBarWidth);
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                const progress = entry.target.getAttribute('data-progress');
-                if (progress) {
-                    (entry.target as HTMLElement).style.width = progress + '%';
-                }
+                setBarWidth(entry.target as HTMLElement);
+                observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.2 });
 
     skillBars.forEach(bar => observer.observe(bar));
 }
@@ -332,7 +341,12 @@ function initContactForm() {
         statusDiv.style.display = 'none';
 
         try {
-            const response = await fetch('http://localhost:3001/contact', {
+            // Use relative URL that works both locally and on Vercel
+            const apiUrl = import.meta.env.DEV 
+                ? 'http://localhost:3001/contact' 
+                : '/api/contact';
+            
+            const response = await fetch(apiUrl, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -361,40 +375,4 @@ function initContactForm() {
     });
 }
 
-// Add CSS for animations
-const style = document.createElement('style');
-style.textContent = `
-    .animate-hidden {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    
-    .animate-in {
-        animation: fadeInUp 0.6s ease forwards;
-    }
-    
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(30px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-    
-    .nav-toggle.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-    
-    .nav-toggle.active span:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .nav-toggle.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px);
-    }
-`;
-document.head.appendChild(style);
 
